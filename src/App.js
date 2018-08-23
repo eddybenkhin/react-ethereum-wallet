@@ -21,6 +21,9 @@ import NavBar from './components/navbar';
 import MistAlert from './components/mistAlert.js';
 import MistAlertBubble from './components/mistAlertBubble.js';
 
+// elements
+import GlobalNotification from './components/elements/GlobalNotification.jsx';
+
 // Modals
 import NoConnection from './components/views/modals/NoConnection.jsx';
 
@@ -113,7 +116,7 @@ class App extends Component {
 
   toggleNoConnection(e) {
      console.log(window.web3)
-    
+
     console.log("in noConnection", window)
     this.state['noConnection']
       ? this.setState({ noConnection: false })
@@ -148,7 +151,7 @@ class App extends Component {
               </BrowserRouter>
 
 
-              <NoConnection 
+              <NoConnection
               validStyles={this.props.reducers.noConnection}
               onClick={() => this.toggleNoConnection()}
               />
