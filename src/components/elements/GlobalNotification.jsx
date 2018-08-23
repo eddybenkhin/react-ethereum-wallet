@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// ignore this comment
 const GlobalNotificationTypes = [error, warning, info, success, animate]
 
 class GlobalNotification extends Component {
